@@ -26,6 +26,7 @@ body {
   padding-top: 16px;
   position: sticky;
   top: 0;
+  background-color: #28293e;
 }
 .navigation > .logo > img {
   cursor: pointer;
@@ -65,7 +66,7 @@ body {
 /**Page banner**/
 .banner {
   text-align: center;
-  padding-top: 100px;
+  padding: 100px 0 64px;
 }
 .banner > h1 {
   font-weight: 800;
@@ -73,6 +74,7 @@ body {
   line-height: 80px;
   letter-spacing: -2px;
   color: #ffffff;
+  padding-bottom: 24px;
 }
 .banner > p {
   font-size: 16px;
@@ -80,4 +82,37 @@ body {
   color: rgba(255, 255, 255, 0.64);
   max-width: 570px;
   margin: 0 auto;
+}
+
+/****featured blogs****/
+.featured-blog {
+  background-color: #fdf0e9;
+}
+
+.featured-blog > .container {
+  display: flex;
+  gap: 30px;
+  padding-top: 80px;
+  padding-bottom: 64px;
+}
+.featured-blog-card {
+  width: 100%;
+}
+.featured-blog-card > h3 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  color: #391400;
+  max-width: 540px;
+  margin-bottom: 12px;
+}
+.featured-blog-card > time {
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
+}
+.featured-blog-tag {
+  color: #391400;
+  font-size: 20px;
+  padding: 24px 0;
 }
