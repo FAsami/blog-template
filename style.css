@@ -488,6 +488,9 @@ footer > .container {
   .blogs > .container {
     display: block;
   }
+  .blog-card {
+    max-width: auto;
+  }
   .newsletter-form > input {
     width: 100%;
     min-width: auto;
