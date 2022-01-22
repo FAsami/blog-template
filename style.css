@@ -198,7 +198,7 @@ body {
   grid-gap: 64px 30px;
 }
 .blog-img {
-  width: 370px;
+  width: 100%;
 }
 .blog-img > img {
   width: 100%;
@@ -206,7 +206,7 @@ body {
   border-radius: 6px;
 }
 .blog-card {
-  max-width: 370px;
+  max-width: 100%;
 }
 .blog-card > h3 {
   font-weight: bold;
@@ -482,8 +482,18 @@ footer > .container {
   }
   .footer-credit {
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
     text-align: center;
+  }
+  .blogs > .container {
+    display: block;
+  }
+  .newsletter-form > input {
+    width: 100%;
+    min-width: auto;
+  }
+  .footer-credit > div > a {
+    margin-right: 32px;
   }
 }
 @media screen and (max-width: 1170px) {
