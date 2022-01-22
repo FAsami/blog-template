@@ -48,31 +48,42 @@ body {
 /***Header*****/
 .header {
   background-color: #28293e;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
 /**Navigation menu**/
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
-  position: sticky;
-  top: 0;
-  background-color: #28293e;
-  z-index: 999;
+  padding: 16px 0;
+  position: relative;
+}
+.navigation > .logo {
+  margin-right: 175px;
 }
 .navigation > .logo > img {
   cursor: pointer;
 }
-.navigation > a {
+.navigation > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.navigation > div > a {
   text-decoration: none;
   font-size: 16px;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
-.navigation > a:hover {
+.navigation > div > a:hover {
   color: #ef6d58;
 }
-.navigation > a > button {
+.navigation > div > a > button {
   color: #fff;
   background: transparent;
   border: 1px solid #fff;
@@ -91,14 +102,31 @@ body {
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
-.navigation > a > button:hover {
+.navigation > div > a > button:hover {
   box-shadow: inset 400px 0 0 0 #ef6d58;
 }
-
+.hamburger-menu {
+  border: 1px solid rgba(255, 255, 255, 0.295743);
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.hamburger-menu {
+  color: #fff;
+  border: 1px solid #fff;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 28px;
+  display: none;
+}
 /**Page banner**/
 .banner {
   text-align: center;
-  padding: 100px 0 64px;
+  padding: 84px 0 64px;
+  background-color: #28293e;
 }
 .banner > h1 {
   font-weight: 800;
@@ -355,4 +383,36 @@ footer > .container {
   text-decoration: none;
   margin-right: 64px;
   color: #ef6d58;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 16px;
+  }
+  .navigation > .logo {
+    margin-right: auto;
+  }
+  .navigation > div {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    background: #ef6d58;
+    left: 0;
+    right: 0;
+    padding: 32px;
+    align-items: flex-start;
+    transition: all 0.3s ease-in-out;
+    display: none;
+  }
+  .navigation > div > a {
+    padding-bottom: 16px;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .container {
+    padding: 16px;
+  }
 }
