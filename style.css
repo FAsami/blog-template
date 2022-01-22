@@ -219,6 +219,7 @@ body {
 /***Newsletter***/
 .newsletter {
   background-color: #fdf0e9;
+  padding-bottom: 110px;
 }
 .newsletter > .container {
   padding-bottom: 64px;
@@ -247,4 +248,27 @@ body {
 }
 .newsletter-form > input:focus {
   border: 2px solid #ef6d58;
+}
+/***Contact***/
+.contact {
+  background-color: #ef6d58;
+}
+.contact > .container {
+  padding: 80px 100px;
+  display: flex;
+  gap: 70px;
+}
+.contact > .container > div > h1 {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  padding-top: 16px;
+}
+.contact > .container > div > p {
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.64);
+  padding: 32px 0;
 }
