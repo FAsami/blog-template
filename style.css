@@ -156,6 +156,14 @@ body {
   padding-bottom: 64px;
   border-bottom: 1px solid #f3d1bf;
 }
+
+.featured-blog-img {
+  width: 100%;
+}
+.featured-blog-img > img {
+  width: 100%;
+  height: a;
+}
 .featured-blog-card {
   width: 100%;
 }
@@ -273,18 +281,28 @@ body {
   min-width: 370px;
   padding: 0 16px;
   transition: all 0.2s ease-in-out;
+  height: 48px;
 }
 .newsletter-form > input:focus {
   border: 2px solid #ef6d58;
 }
 /***Contact***/
 .contact {
-  background-color: #ef6d58;
+  background-color: #fdf0e9;
+}
+.contact-img {
+  width: 100%;
+}
+.contact-img > img {
+  width: 100%;
+  height: auto;
 }
 .contact > .container {
   padding: 80px 100px;
   display: flex;
   gap: 70px;
+  background-color: #ef6d58;
+  border-radius: 6px;
 }
 .contact > .container > div > h1 {
   font-weight: 800;
@@ -303,6 +321,7 @@ body {
 /***footer***/
 footer {
   background-color: #fdf0e9;
+  padding: 16px;
 }
 footer > .container {
   display: grid;
@@ -409,6 +428,62 @@ footer > .container {
   }
   .hamburger-menu {
     display: flex;
+  }
+  .banner > h1 {
+    font-size: 56px;
+  }
+  .featured-blog > .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+  }
+  .featured-blog-img > img {
+    width: 100%;
+    height: auto;
+  }
+  .featured-blog-card > h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .newsletter > .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter-form {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  .contact {
+    padding: 0 16px;
+  }
+  .contact > .container {
+    flex-direction: column;
+    padding: 24px;
+  }
+  .contact > .container > div > h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .contact > .container > div {
+    order: 2;
+  }
+  .contact > .container > .contact-img {
+    order: 1;
+  }
+  footer > .container {
+    text-align: center;
+  }
+  .social-menu > ul {
+    justify-content: center;
+    margin-top: 64px;
+  }
+  .footer-credit {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 1170px) {
